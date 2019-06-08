@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="da">
+	
+<head>
+	<meta charset="UTF-8">
+	<title>Husligepligter</title>
+
+	<!-- Denne tekst vil blive vist under titlen i søgeresultaterne -->
+	<meta name="Description" content="Har du styr på dine huslige pligter? Kom og lær dem hos MovingOut.">
+	
+	<!-- Bogmærker -->
+	<link rel="shortcut icon" type="image/png" href="../Logo/shortcut-logo.png">
+	<link rel="mask-icon" href="../Logo/shortcut-logo.png">
+
+	<!-- Reference til eksternt sheet -->
+	<link rel="stylesheet" href="../stylesheet.css">
+
+	<!-- Reference til Responsive Design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Google Typeface -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+</head>
+
+<body>
+	
+	<!-- Logo Section -->
+	
+	<div class="top">   <img src="../Logo/nytlogo.png" alt="logo" class="logo">   </div>
+	
+	
+	<!--Navbar Section -->
+	
+	<div id="navbar" class="navbar">
+		<div class="container">
+			<img src="../Icons/burger.png" alt="burger menu" class="burger-icon" id="burger-icon">
+				
+			<ul>
+				<li> <a href="../index.html">VELKOMMEN</a></li>	
+				<li> <a href="flytteklar.html">FLYTTEKLAR</a></li>
+				<li> <a href="husligepligter.html" class="current-page">HUSLIGE PLIGTER</a></li>
+				<li> <a href="shop.html">SHOP</a></li>
+				<li> <a href="kontakt.html">KONTAKT</a></li>
+			</ul>
+		</div>
+	</div>	
+	
+	<div id="fake-navbar"></div>
+	
+	<!-- Header Section -->
+	
+	<img src="../Headers/husligepligter-img.png" alt="slideshow" class="header">
+	
+	<!-- Introduction Section -->
+	
+	<div class="introduction">
+		<h1>Huslige pligter</h1>
+		<h4>PÅ EGEN HÅND</h4>
+		<div class="introduction-content">	
+			<p>Pligter derhjemme er aldrig helt nemt. Men med en masse motivation og den rette viden, kan man komme langt med kedelige opgaver. Vi fører dig igennem 3 vigtige emner, som man måske synes er uoverskuelige.  </p>
+		</div>	
+	</div>	
+	
+	
+	<!-- Vælg en Tutorial Section -->
+	
+	<!-- Shop Section -->
+	
+	<div class="shop-grid">
+		<div class="grid-row">
+			<div class="shop-img">	
+				<div class="shadow-box">	
+					<a href="budget.html"><img src="../Images/piggybank.jpg" alt="shop-img"></a>
+				</div>	
+				
+				<h3>Budget Planlægning</h3>	
+				<span class="post-description">Lær at lave dit eget budget fra bunden og brug det for at få en stabil og sikker hverdag.</span>
+				<a href="budget.html">   <div class="add-to-cart">LÆS MERE</div>   </a>	
+			</div>
+
+			<div class="shop-img">	
+				<div class="shadow-box">	
+					<a href="denhurtigevask.html"><img src="../Images/washingmachine.png" alt="shop-img"></a>
+				</div>	
+				
+				<h3>Den Hurtige Vask</h3>	
+				<span class="post-description">Følg vores guide til at vaske tøj og få de bedste tips fra Thomas.</span>
+				<a href="denhurtigevask.html">   <div class="add-to-cart">LÆS MERE</div>   </a>
+			</div>
+
+			<div class="shop-img">	
+				<div class="shadow-box">	
+					<a href="kalender.html"><img src="../Images/calendar.png" alt="shop-img"></a>
+				</div>	
+
+				<h3>Planlæg din kalender</h3>	
+				<span class="post-description">Lær at opsætte din kalender og få et overblik over en stabil hverdag.</span>
+				<a href="kalender.html">   <div class="add-to-cart">LÆS MERE</div>   </a>	
+			</div>
+		</div>	
+	</div>
+
+	<!-- Footer Section -->
+	
+	<footer>
+		<div class="footer-content">
+			<div class="footer-grid-row">	
+				<div class="footer-text1" style="vertical-align:middle">Copyright 2019 © Moving Out</div>	
+					<div class="footer-text mobile-around">	
+						<a href="https://www.facebook.com/movingoutdenmark/" target="_blank"><img src="../Icons/facebook.png" alt="facebook" class="footer-icon footer-icon-mobile"></a>	
+
+						<a href="https://www.instagram.com/movingout.dk/" target="_blank"><img src="../Icons/instagram.png" alt="instagram" class="footer-icon footer-icon-mobile"></a>	
+
+						<a href="https://twitter.com/MovingoutD?lang=en" target="_blank"><img src="../Icons/twitter.png" alt="twitter" class="footer-icon footer-icon-mobile"></a>	
+
+						<a href="https://www.youtube.com/channel/UCpfPwvBDKsri5PzvbiQa6fA?view_as=subscriber" target="_blank"><img src="../Icons/youtube.png" alt="youtube" class="footer-icon footer-icon-mobile"></a>		
+					</div>
+
+				<div class="footer-text">
+					<a href="kontakt.html">
+						<img src="../Icons/mail.png" alt="email" class="footer-icon"> 
+					</a>
+					movingoutdk@gmail.com
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	
+	<script src="../navbar.js"></script>	
+	
+	<!--  Husligepligter havde noget JS modal, jeg kunne ikke så hvorfor (gætter på råd) men jeg turde ikke slette det helt -->
+<!--// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}	-->
+		
+</body>
+	
+</html>

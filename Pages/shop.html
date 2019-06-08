@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="da">
+	
+<head>
+	<meta charset="UTF-8">
+	<title>Shop</title>
+
+	<!-- Denne tekst vil blive vist under titlen i søgeresultaterne -->
+	<meta name="Description" content="Er du ved at flytte ud og har brug for mange/ALLE køkkenredskaber? Kom og køb dem hos MovingOut og få op til 35% rabat!">
+
+	<link rel="shortcut icon" type="image/png" href="../Logo/shortcut-logo.png">
+	<link rel="mask-icon" href="../Logo/shortcut-logo.png">
+
+	<!-- reference til eksternt sheet -->
+	<link rel="stylesheet" href="../stylesheet.css">
+	
+	<!-- Reference til Responsive Design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Google Typeface -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+</head>
+
+<body>
+	
+	<!-- Logo Section -->
+	
+	<div class="top">   <img src="../Logo/nytlogo.png" alt="logo" class="logo">   </div>
+	
+	
+	<!--Navbar Section -->
+	
+	<div id="navbar" class="navbar">
+		<div class="container">
+			<img src="../Icons/burger.png" alt="burger menu" class="burger-icon" id="burger-icon">
+			
+			<ul>
+				<li> <a href="../index.html">VELKOMMEN</a></li>	
+				<li> <a href="flytteklar.html">FLYTTEKLAR</a></li>
+				<li> <a href="husligepligter.html">HUSLIGE PLIGTER</a></li>
+				<li> <a href="shop.html" class="current-page">SHOP</a></li>
+				<li> <a href="kontakt.html">KONTAKT</a></li>
+			</ul>
+		</div>
+	</div>	
+	
+	<div id="fake-navbar"></div>	
+	
+	<!-- Header Section -->
+	
+	<img src="../Headers/header-shop.jpg" alt="slideshow" class="header">
+	
+	<!-- Shop Section -->
+	
+	<!-- Shop Section -->
+	<div class="shop-grid">
+		<div class="grid-row">
+			<div class="shop-img">
+				<div id="myBtn1" style="cursor: pointer">
+					<div class="shadow-box">	
+						<img src="../Images/pakke1-img.jpg" alt="shop-img"> 
+					</div>
+					<h3>Pakke 1: Tallerkener, bestik og glas</h3>	
+					<span class="price-amount">165 dkk</span>
+				</div>	
+				<div id="item1" class="add-to-cart">LÆG I KURV</div>	
+			</div>
+
+			<div class="shop-img">
+				<div id="myBtn2" style="cursor: pointer">
+					<div class="shadow-box">	
+						<img src="../Images/pakke2-img.jpg" alt="shop-img">
+					</div>	
+					<h3>Pakke 2: Køkkenredskaber</h3>	
+					<span class="price-amount">292 dkk</span>
+				</div>
+				<div id="item2" class="add-to-cart">LÆG I KURV</div>
+			</div>
+
+			<div class="shop-img">	
+				<div id="myBtn3" style="cursor: pointer">
+					<div class="shadow-box">
+						<img src="../Images/pakke4-img.jpg" alt="shop-img">
+					</div>
+					<h3>Pakke 3: Store Køkkenting</h3>	
+					<span class="price-amount">1070 dkk</span>
+				</div>
+				<div id="item3" class="add-to-cart">LÆG I KURV</div>	
+			</div>
+		</div>
+
+		<div class="grid-row">
+			<div class="shop-img">	
+				<div id="myBtn4" style="cursor: pointer">
+					<div class="shadow-box">
+						<img src="../Images/pakke5-img.jpg" alt="shop-img">
+					</div>
+					<h3>Pakke 4: Rengøring</h3>	
+					<span class="price-amount">239 dkk</span>
+				</div>
+				<div id="item4" class="add-to-cart">LÆG I KURV</div>	
+			</div>
+
+			<div class="shop-img">	
+				<div id="myBtn5" style="cursor: pointer">
+					<div class="shadow-box">
+						<img src="../Images/pakke3-img.jpg" alt="shop-img">
+					</div>
+					<h3>Pakke 5: Den Fulde Køkkenpakke</h3>	
+					<span class="price-amount">1502 dkk</span>
+				</div>
+				<div id="item5" class="add-to-cart">LÆG I KURV</div>	
+			</div>
+
+			<div class="shop-img">	
+				<div id="myBtn6" style="cursor: pointer">
+					<div class="shadow-box">
+						<img src="../Images/pakke6-img.jpg" alt="shop-img">
+					</div>
+					<h3>Rengørings Abonnement</h3>	
+					<span class="price-amount">222 dkk</span>
+				</div>
+				<div id="item6" class="add-to-cart">LÆG I KURV</div>	
+			</div>
+		</div>
+	</div>	
+		
+	
+	<!-- -Vare1 Modal1- -->
+	<div id="myModal1" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+
+			<!-- Product Section -->	
+			<div class="product-container">
+				<img src="../Images/pakke1-img.jpg" alt="shop-img" class="shop-img-large">
+				<div class="product-text">
+					<h1 style="text-align: left">Pakke 1: Tallerkener, Bestik &amp; Glas</h1>
+					
+					<div class="flex-between">
+						<span class="price-amount" style="text-align: left">165 dkk</span>
+						<div id="item1b" class="add-to-cart atc-modal">LÆG I KURV</div>
+					</div>
+					
+					<p>I samarbejde med IKEA, tilbyder vi vores flyttepakker. Hver pakke indeholder husholdningsgentande fra køkkenet, som skal gavne din hverdag. Desuden tilbyder vi 35%, hvis du køber igennem vores shop. </p> 
+				</div>	
+			</div>
+
+			<!-- Product Description -->
+			<div class="vl"></div>	
+			<div class="product-description">
+				<h2>Produkt Beskrivelse</h2>
+				<p>
+					4 tallerkner, 2 dybe tallerkner, 1 lille skål, 1 stor skål <br>
+					2 kopper, 4 glas, 2 vinglas <br>
+					4 knive, 4 gafler, 2 spiseskeer, 2 teskeer
+				</p> 
+			</div>
+		</div>
+	</div>
+	
+	<!-- Vare1 Modal2 -->
+	<div id="myModal2" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+
+			<!-- Product Section -->	
+			<div class="product-container">
+				<img src="../Images/pakke2-img.jpg" alt="shop-img" class="shop-img-large">
+				<div class="product-text">
+					<h1 style="text-align: left">Pakke 2: Køkkenredskaber</h1>	
+					
+					<div class="flex-between">
+						<span class="price-amount" style="text-align: left">292 dkk</span>
+						<div id="item2b" class="add-to-cart atc-modal">LÆG I KURV</div>
+					</div>
+					
+					<p>I samarbejde med IKEA, tilbyder vi vores flyttepakker. Hver pakke indeholder husholdningsgentande fra køkkenet, som skal gavne din hverdag. Desuden tilbyder vi 35%, hvis du køber igennem vores shop. </p> 
+				</div>	
+			</div>
+
+			<!-- Product Description -->
+			<div class="vl"></div>	
+			<div class="product-description">
+				<h2>Produkt Beskrivelse</h2>
+				<p>
+					1 par grydelapper <br>
+					1 grydeske, 1 pastaske, 1 suppeske, 1 spatel <br>
+					1 rivejern, 1 køkkensaks, 1 piskeris, 1 dåseåbner <br>
+					1 køkkenkniv, 1 urtekniv, 1 brødkniv, 1 skærebræt <br>
+					1 decilitermål, 1 litermål, 
+				</p> 
+			</div>
+		</div>
+	</div>
+	
+	<!-- Vare1 Modal3 -->
+	<div id="myModal3" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+
+			<!-- Product Section -->	
+			<div class="product-container">
+				<img src="../Images/pakke4-img.jpg" alt="shop-img" class="shop-img-large">
+				<div class="product-text">
+					<h1 style="text-align: left">Pakke 3: Store Køkkenting</h1>	
+					
+					<div class="flex-between">
+						<span class="price-amount" style="text-align: left">1070 dkk</span>
+						<div id="item3b" class="add-to-cart atc-modal">LÆG I KURV</div>
+					</div>
+					
+					<p>I samarbejde med IKEA, tilbyder vi vores flyttepakker. Hver pakke indeholder husholdningsgentande fra køkkenet, som skal gavne din hverdag. Desuden tilbyder vi 35%, hvis du køber igennem vores shop. </p> 
+				</div>	
+			</div>
+
+			<!-- Product Description -->
+			<div class="vl"></div>	
+			<div class="product-description">
+				<h2>Produkt Beskrivelse</h2>
+				<p>
+					1 stor gryde, 1 lille gryde, 1 pande, 1 ovnfast fad <br>
+					1 toaster, 1 elkedel, 1 vægt
+				</p> 
+			</div>
+		</div>
+	</div>
+	
+	<!-- Vare1 Modal4 -->
+	<div id="myModal4" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+
+			<!-- Product Section -->	
+			<div class="product-container">
+				<img src="../Images/pakke5-img.jpg" alt="shop-img" class="shop-img-large">
+				<div class="product-text">
+					<h1 style="text-align: left">Pakke 4: Rengøring</h1>	
+					
+					<div class="flex-between">
+						<span class="price-amount" style="text-align: left">239 dkk</span>
+						<div id="item4b" class="add-to-cart atc-modal">LÆG I KURV</div>
+					</div>
+					
+					<p>I samarbejde med IKEA, tilbyder vi vores flyttepakker. Hver pakke indeholder husholdningsgentande fra køkkenet, som skal gavne din hverdag. Desuden tilbyder vi 35%, hvis du køber igennem vores shop. </p> 
+				</div>	
+			</div>
+
+			<!-- Product Description -->
+			<div class="vl"></div>	
+			<div class="product-description">
+				<h2>Produkt Beskrivelse</h2>
+				<p>
+					1 pakke klude (4 stk), 1 pakke viskestykker (4 stk) <br>
+					1 opvaskebørste <br>
+					1 spand, 1 sæt kost og fejebakke <br>
+					2 håndklæder, 1 gulvmoppe
+				</p> 
+			</div>
+		</div>
+	</div>
+	
+	<!-- Vare1 Modal5 -->
+	<div id="myModal5" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+
+			<!-- Product Section -->	
+			<div class="product-container">
+				<img src="../Images/pakke3-img.jpg" alt="shop-img" class="shop-img-large">
+				<div class="product-text">
+					<h1 style="text-align: left">Rengørings Abonnement</h1>	
+					
+					<div class="flex-between">
+						<span class="price-amount" style="text-align: left">1502 dkk</span>
+						<div id="item5b" class="add-to-cart atc-modal">LÆG I KURV</div>
+					</div>
+					
+					<p>I samarbejde med IKEA, tilbyder vi vores flyttepakker. Hver pakke indeholder husholdningsgentande fra køkkenet, som skal gavne din hverdag. Desuden tilbyder vi 35%, hvis du køber igennem vores shop. </p> 
+				</div>	
+			</div>
+
+			<!-- Product Description -->
+			<div class="vl"></div>	
+			<div class="product-description">
+				<h2>Produkt Beskrivelse</h2>
+				<div class="around">
+					<p>
+						4 tallerkner, 2 dybe tallerkner, 1 lille skål, 1 stor skål <br>
+						2 kopper, 4 glas <br> 
+						4 knive, 4 gafler, 2 spiseskeer, 2 teskeer <br>
+						1 par grydelapper <br>
+						1 grydeske, 1 pastaske, 1 suppeske, 1 spatel, 1 stegepincet <br>
+					</p> 
+					<p>
+						1 rivejern, 1 køkkensaks, 1 piskeris, 1 dåseåbner, 1 gulerodsskræller <br> 
+						1 køkkenkniv, 1 urtekniv, 1 brødkniv, 1 skærebræt <br>
+						1 decilitermål/litermål, 1 sæt salt og peber kværn <br>
+						1 stor gryde, 1 lille gryde, 1 pande, 1 ovnfast fad <br>
+						1 toaster, 1 mikrobølgeovn, 1 elkedel, 1 vægt <br>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<!-- Vare1 Modal6 -->
+	<div id="myModal6" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+
+			<!-- Product Section -->	
+			<div class="product-container">
+				<img src="../Images/pakke6-img.jpg" alt="shop-img" class="shop-img-large">
+				<div class="product-text">
+					<h1 style="text-align: left">Rengørings Abonnement</h1>	
+					
+					<div class="flex-between">
+						<span class="price-amount" style="text-align: left">222 dkk hver 3. måned</span>
+						<div id="item6b" class="atc-abonnement-mobil add-to-cart atc-modal">LÆG I KURV</div>
+					</div>
+					
+					<p>Vi tilbyder en Rengørings Abonnement som der ved hver 3. måned sender dig en pakke med diverse brugbare rengøringsmiddler. Dette sikre at du aldrig løber tør, samt springer over indkøbet af det. 35% rabbat i abonnementet! </p> 
+				</div>	
+			</div>
+
+			<!-- Product Description -->
+			<div class="vl"></div>	
+			<div class="product-description">
+				<h2>Produkt Beskrivelse</h2>
+				<p>
+					Opvaskemiddel, kalkfjerner, afkalker, brun sæbe <br>
+					toiletrens, skuremiddel, glas rens <br>
+					afløbsrens, ovenrens, opvaskesalt, afspændingsmiddel
+				</p> 
+			</div>
+		</div>
+	</div>
+	
+	<!-- Kurv knap -->
+	
+	<div id="kurv">
+		<img src="../Icons/kurv.png" alt="Kurv ikon" class="kurv-billede"> 
+	</div>
+	<p id="counter">0</p>
+	
+	<!-- Kurv modal -->
+	<div id="kurvModal" class="modal">
+		<!-- Modal content -->
+		<div class="kurv-modal-content">
+			<!-- Lukke knap -->
+			<span class="close">&times;</span>
+			<!-- Kurv Section -->	
+			<h3>Dine varer</h3> <br>
+			<div id="kurv-liste">
+				<!-- Vare sektionen som bliver opdateret af læg i kurv -->
+				<div class="kurv-liste1" id="vare"> <h4 class="left-text">Vare</h4> <br> </div> 
+				<div class="kurv-liste2" id="pris"> <h4 class="left-text">Pris</h4> <br> </div>
+				<div class="kurv-liste3" id="stk"> <h4 class="left-text">Stk</h4> <br> </div>
+			</div>
+			<br>
+			<h4 id="total-pris">Total price: </h4> <br>
+			
+			<!-- Åbne betalings modal og tømme kurven for vare -->
+			<div class="kurv-knappe-div">
+				<button id="betalling" class="kurv-knap">Gå til Betaling</button>
+				<button id="tom-kurv" class="kurv-knap">Tøm Kurven</button>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Betaling Section -->
+	<div id="betalModal" class="modal">
+		<div class="betal-modal-content">
+			<span class="close">&times;</span>
+			<div>
+				<h2>Betaling</h2>
+				<h3 class="left-text">Dit fulde navn</h3>
+				<input type="text" class="full-width">
+				<h3 class="left-text">Din adresse</h3>
+				<input type="text" class="full-width">
+				<h3 class="left-text">Kort nr.</h3>
+				<input type="text" class="full-width" placeholder="xxxx-xxxx-xxxx">
+				<div class="kurv-knappe-div">
+					<div class="halv-width">
+						<h3 class="left-text">Udløbsdato</h3>
+						<input type="text" class="full-width" placeholder="xx-xx">
+					</div>
+					<div class="halv-width">
+						<h3 class="left-text">Sikkerhedskode</h3>
+						<input type="text" class="full-width" placeholder="xxx">
+					</div>
+				</div>
+				<button id="betal" class="kurv-knap">Betal</button>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Footer Section -->
+		
+	<footer>
+		<div class="footer-content">
+			<div class="footer-grid-row">	
+				<div class="footer-text1" style="vertical-align:middle">Copyright 2019 © Moving Out</div>	
+					<div class="footer-text mobile-around">	
+						<a href="https://www.facebook.com/movingoutdenmark/" target="_blank"><img src="../Icons/facebook.png" alt="facebook" class="footer-icon footer-icon-mobile"></a>	
+
+						<a href="https://www.instagram.com/movingout.dk/" target="_blank"><img src="../Icons/instagram.png" alt="instagram" class="footer-icon footer-icon-mobile"></a>	
+
+						<a href="https://twitter.com/MovingoutD?lang=en" target="_blank"><img src="../Icons/twitter.png" alt="twitter" class="footer-icon footer-icon-mobile"></a>	
+
+						<a href="https://www.youtube.com/channel/UCpfPwvBDKsri5PzvbiQa6fA?view_as=subscriber" target="_blank"><img src="../Icons/youtube.png" alt="youtube" class="footer-icon footer-icon-mobile"></a>		
+					</div>
+
+				<div class="footer-text">
+					<a href="kontakt.html">
+						<img src="../Icons/mail.png" alt="email" class="footer-icon"> 
+					</a>
+					movingoutdk@gmail.com
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<!-- Footer Slutter -->
+	
+	<script src="../navbar.js"></script>
+	<script src="shopjs.js"></script>
+	
+</body>
+	
+</html>

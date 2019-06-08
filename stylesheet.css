@@ -1,0 +1,1341 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ---Jeg har ingen anelse om hvad de 2 classes skulle blive brugt til, men vi beholder dem i en kommentar---
+.tools-icons-row {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.tools-icon {
+	width: 7%;
+	height: 7%;
+	padding-left: 13px;
+	padding-right: 13px;
+}*/
+
+
+/* ----------------------------------Overordnet Css-------------------- */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+img {width: 100%;}
+
+/* fixer shadow box buggen */
+img{vertical-align:middle}
+
+
+a:link {
+	color: black; 
+	background-color: transparent; 
+	text-decoration: none;
+}
+
+a:after {
+	color: black; 
+	background-color: transparent; 
+	text-decoration: none;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	color: black;
+	font-size: 15px;
+	line-height: 25.5px;
+	line-height: 1.9em;
+	text-align: left;
+}
+
+h1 {
+    font-family: 'Amiri', serif;
+    font-size: 2.2em;
+    font-weight: 400;
+    letter-spacing: normal;
+	text-align: center;
+    line-height: 42.24px;
+    margin: 0 0 0.2em;
+	display: block;
+}
+
+h2 {
+	font-family: 'Amiri', serif;
+	font-size: 30px;
+	display: block;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: 36.5px;
+	text-align: center;
+	text-size-adjust: 100%;
+	padding-bottom: 15px;
+}
+
+h3 {
+	display: block;
+	font-size: 24px;
+	font-family: 'Amiri', serif;
+	text-align: center;
+	font-weight: 400;
+	clear: none;
+	letter-spacing: normal;
+	line-height: 28.8px;
+	text-size-adjust: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+h4 {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+    font-weight: bold;
+	display: block;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-size-adjust: 100%;
+	color: black;
+}
+
+h5 {
+	padding-bottom: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: black;
+	font-size: 16px;
+	line-height: 25.5px;
+	line-height: 1.9em;
+	text-align: left;
+}
+
+
+/* -----Logo----- */
+
+.top{
+	background-image: url(Images/tag.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+
+.logo {
+	width: 20%;
+ 	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+/* -----Navbar----- */
+
+.sticky + .container {
+  padding-top: 140px;
+}
+
+#navbar {
+	z-index: 3;
+	overflow: hidden;
+}
+
+.current-page{color: #80cbc4 !important;}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;	
+	overflow: hidden;
+	display: inline-block;
+}
+
+li {float: left;}
+
+li a {
+	box-sizing: border-box;
+	color: black;
+	cursor: pointer;
+  	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 13.44px;
+	padding-bottom: 13.44px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	line-height: 21.28px;
+ 	margin-left: 50px;
+	margin-right: 50px;
+	text-decoration-color: black;
+}
+
+.burger-icon {
+	width: 30px;
+	display: none;
+    padding-top: 8px;
+	padding-right: 8px;
+	float: right;
+}
+
+.burger-icon:hover{
+	cursor: pointer;
+	opacity: 0.3;
+}
+
+
+/* -----Footer----- */
+
+footer {
+	background-color: #f9f7f7;
+	margin-top: 60px;
+}
+
+.footer-content {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.footer-grid-row {
+	display: flex;
+	justify-content: center;
+}
+
+
+.footer-icon {
+	display: inline-block;
+	width: 16%;
+}
+
+.footer-text {
+	width: 226px;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 2px;
+	font-size: 12px;
+}
+
+.footer-text1 {
+	width: 226px;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 2px;
+	font-size: 12px;
+	margin-top: 10px;
+	vertical-align: middle;
+}
+
+/* -----Classes der bliver brugt på på alle eller flere af siderne----- */
+
+.container {
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	text-align: center;
+	background-color: white;
+}
+
+.introduction {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+.introduction-content {
+	margin-top: 30px;
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grid-row {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+
+/* classes som gør html diver til modals */
+.modal {
+  display: none; /* er normalt skjult */
+  position: fixed; /* Ændre ikke position */
+  z-index: 1; /* Dens position er over alt andet html */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; /* Gør at man kan scrolle, hvis modalet er for stort til skærmen */
+  background-color: rgb(0,0,0); /* Hvis browseren ikke kan forstå opacity, så gør den bare baggrunden mørk */
+  background-color: rgba(0,0,0,0.4); /* Gør bacgrunden mørk men gennemsigtig  */
+}
+
+/* Modal indhold*/
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+/* Lukke knappen */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Giver diver en box-shadow ved hover */
+.shadow-box		 { transition: box-shadow .2s;}
+.shadow-box:hover{ box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);}
+
+/* en knap style som er brugt mange steder og ikke kun i shoppen */
+.add-to-cart {
+	display: block;
+	text-align: center;
+	font-size: 11px;
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 2px;
+	line-height: 11.2px;
+	padding-bottom: 10px;
+	margin-right: 11px;
+	margin-top: 10px;
+	padding-top: 10px;
+	background-color: #f7f9f7;
+	color: black;
+	border-radius: 200px;
+	width: 50%;
+	margin-left: 25%;
+}
+
+.add-to-cart:hover, .kurv-knap{
+	cursor: pointer;
+	color: black !important;
+	background-color: rgb(235, 235, 235);
+}
+
+
+/* -----Index og Flytteklar----- */
+
+/* Slideshow classes der bliver genbrugt */
+.mySlides {display:none;}
+
+.arrow-left{
+	float:left!important;
+	padding-right: 50px !important;
+}
+.arrow-right{
+	float:right!important;
+	padding-left: 50px !important;
+}
+
+/* -----Flytteklar og Husligepligter----- */
+
+.post-description {
+	font-size: 13px;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1px;
+	line-height: 25.5px;
+	display: block;
+	text-align: center;
+}
+
+/* -----Husligepligter og Shop----- */
+
+.shop-grid {margin-top: 40px;}
+
+/* Den bliver vidst aldrig brugt, men vi beholder den i kommentar just in case
+.shop-grid-row {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+} */
+
+/* -----Flytteklar, Husligepligter og Shop----- */
+
+.shop-img {
+	width: 25%;
+	height: 25%;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+/* -----Posts (Quiz, Kogebog, Budet, Den hurtige vask og Kalender)----- */
+
+/* Denne class fixer footeren på post siderne */
+.clear{ clear: both;}
+
+.post-container {
+	width: 100%;
+	margin-top: 80px;
+}
+
+.post-content {
+	width: 57%;
+	margin-left: 120px;
+	float: left;
+}
+
+.post-tag {
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	font-size: 11.5px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	line-height: 21.5px;
+	text-transform: uppercase;
+}
+
+.post-title {
+	font-family: 'Amiri', serif;
+	display: block;
+	font-size: 32.5px;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: 42px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.post-header {padding-bottom: 25px;}
+
+.post-paragraph {
+	padding-bottom: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: black;
+	font-size: 13.5px;
+	line-height: 25.5px;
+	line-height: 1.9em;
+	text-align: left;
+}
+
+.post-button {
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	background-color: #f9f7f7;
+	color: #363636;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);	
+	text-align: center;	
+	margin-bottom: 20px;	
+}
+
+/* den lille streg der er på posts siderne */
+.vl-post {
+	border-bottom: 1px solid#EAEAEA;
+    width: 200px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* De 2 "widgets" til højre på post siderne */
+.widgets {
+	width: 23%;
+	float: right;
+	margin-right: 100px;
+	margin-top: 85px;
+}
+
+.widget-title {
+	box-sizing: border-box;
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12.5px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	line-height: 24.5px;
+	text-align: center;
+}
+
+.widget-img {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.vl-widget {
+	border-bottom: 1px solid#EAEAEA;
+    width: 100%;
+	padding-bottom: 40px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.instagram-promotion {padding-top: 10px;}
+
+
+/* ---------------------------------------Index------------------------- */
+
+/* -----Slideshow----- */
+.slideshow{
+	margin-left:auto;
+	margin-right:auto;
+	position:relative
+}
+
+.slideshow-container{
+	padding:0.01em 0px;
+	display:inline-block;
+	text-align:center!important;
+	font-size:18px!important;
+	color:#fff!important;
+	position:absolute;
+	left: 50%;
+	width: 100%;
+	top:48%;
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+
+.slide-arrow:hover{color:rgb(235, 235, 235)!important;}
+.slide-button:hover{background-color: rgb(235, 235, 235);}
+
+.slide-arrow{
+	cursor:pointer;
+	padding: 10% 16px;
+	font-size: 30px;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.slide-button {
+	position: absolute;
+	font-size: 13px;
+	font-family: 'Raleway', sans-serif;
+	background-color: #f9f7f7;
+	color: #363636;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);	
+	text-align: center;	
+	margin-bottom: 20px;
+	z-index: 1;
+	font-weight: 1000;
+}
+
+.slide-button1{top: 52%; left: 30%;}
+.slide-button2{top: 60%; left: 46.9%;}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* webkit betyder bare at det er optimeret til nogle bestemte browsere */
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* -----Om os----- */
+
+.background-color {	background-color: #f9f7f7;}
+
+.portrait-grid {
+	padding-top: 80px;
+	padding-bottom: 100px;
+}
+
+.portrait {	
+	width: 26%;
+	height: 26%;
+	padding-left: 24px;
+	padding-right: 24px; 
+}
+
+.portrait-text {margin-top: 17px;}
+.portrait-text p, .portrait-text h4{font-size: 13px;}
+
+
+/* -----App----- */
+
+.app-promotion {padding-top: 70px;}
+
+.app-promotion-content {	
+	padding-top: 60px;
+	display: flex;
+	justify-content: center;
+}
+
+.app-promotion-text {
+	width: 500px;
+	margin-bottom: 17px;
+	margin-right: 30px;
+}
+
+.app-promotion-img, .app-download-img1, .app-download-img2 {
+	width: 30%;
+	height: 30%;
+}
+
+.app-download-img1{margin-left: 15%}
+.app-download-img2{margin-left: 10%}
+
+.block{
+	display: block;
+	margin-top: 50px;
+}
+
+/* ----------------------------------------Flytteklar----------------------- */
+
+/* -----3 Indhold----- */
+
+.advice-content {
+	padding-top: 60px;
+	padding-bottom: 30px;
+	background-color: #f9f7f7;
+}
+
+.advice-billede:hover{cursor: pointer;}
+
+
+/* -----10 gode råd----- */
+
+.advice-slides{
+	margin: 2vh auto;
+	max-width:980px;
+	position:relative
+}
+
+.advice{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 480px;
+	padding: 30px 30px 20px;
+	border: solid 0px black;
+	border-top-left-radius: 5%;
+	border-top-right-radius: 5%;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+	height: 26%;
+	background-color: white;
+}
+
+.advice-pics{
+	width: 480px;
+	height: 340px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+}
+
+.advice-text{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+.advice-tip{
+	font-family: 'Raleway', sans-serif;
+	width: 480px;
+	padding: 20px 30px 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 0px black;
+	border-top: none;
+	word-spacing: 2px;
+	line-height: 160%;
+	background-color: #f7f9f7;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.advice-pilene{
+	display:inline-block;
+	text-align:center!important;
+	margin-top:16px!important;
+	margin-bottom:16px!important;
+	font-size:18px!important;
+	color:#fff!important;
+	position: absolute;
+	top:50%;
+	left:50%;
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	width:100%;
+}
+
+/* ikke vigtig, but keep just in case
+.advice-pilene:after,.advice-pilene:before{
+	content:"";
+	display:table;
+	clear:both
+}*/
+
+.arrow-left{
+	float:left!important;
+	padding-right: 55px !important;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+.arrow-right{
+	float:right!important;
+	padding-left: 55px !important;
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 50px;
+}
+.arrow:hover{
+	text-shadow: -1px 0 rgb(235, 235, 235), 0 1px rgb(235, 235, 235), 1px 0 rgb(235, 235, 235), 0 -1px rgb(235, 235, 235);
+	color: rgb(235, 235, 235);
+	cursor: pointer;
+}
+.arrow{
+	padding: 10% 5%;
+	font-size: 30px;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/* -----Checkliste----- */
+
+.checkliste-icon {
+	width: 7%;
+	height: 7%;
+	padding-left: 17px;
+	padding-right: 17px;
+	transition: transform 0.2s;
+}
+
+.checkliste-icon:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.checkliste li{	padding: 2px;}
+.checkliste-content{margin-top: 40px;}
+.checkliste-navn {text-align: center;}
+
+.center-content{
+	display: flex; 
+	justify-content: center;
+}
+
+.checkliste-container{
+	display: flex;
+	justify-content: space-around;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);	
+	border-radius: 50px;
+	padding: 30px;
+	width: 50%;
+}
+
+.checkliste{
+	display: flex;
+	flex-direction: column;
+    list-style-type: circle;
+}
+
+.checkliste li{
+	font-family: 'Raleway', sans-serif;
+	display: list-item;
+}
+
+/* The Close Button */
+#checklisteClose {
+	position: absolute;
+	left: 80%;
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#checklisteClose:hover,
+#checklisteClose:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.mobile-only{display: none !important;}
+
+/* ----------------------------------------Quiz------------------------- */
+
+#main {
+	width: 85%;
+	max-width: 950px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);	
+	margin: auto;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#form1{
+	font-family: 'Raleway', sans-serif;
+}
+	
+#form1 label {
+	display: block;
+	font-size: 14px;
+    vertical-align: top;
+}
+input[type="radio"]{
+    vertical-align: top;
+}
+	
+.answer-option{
+	display: flex;
+	margin: 0px 20px 10px;
+}
+
+.quiz-input {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+	
+.quiz-h2 {
+	clear: both;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	text-align: left;
+	margin-left: 26px;
+}
+
+.quiz-button{
+	margin-left: 20%;
+	margin-right: 23%;
+	padding: 15px 25px;
+}
+.quiz-button:hover{
+	background-color: rgb(235, 235, 235);
+}
+	
+.quiz-bund{
+	display: flex;
+	align-content: space-between;
+}
+
+/* --------------------------------Den hurtige vask-------------------- */
+
+.youtube{
+	width: 100%;
+	height: 500px;
+	margin-bottom: 20px; 
+	border: none;
+}
+
+/* --------------------------------------Shop-------------------------- */
+
+/* -----Shop sektion----- */
+
+.price-amount {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: 30.4px;
+	text-align: center;
+	display: block;
+}
+
+@keyframes spin { 
+	0% { transform:rotate(0deg); } 
+	25% { transform:rotate(5deg); } 
+	50% { transform:rotate(-5deg); } 
+	75% { transform:rotate(5deg); } 
+	100% { transform:rotate(0deg); } 
+}
+
+/* -----Produkt modal----- */
+
+.flex-between{
+	display: flex;
+	justify-content: space-between;
+}
+
+.atc-modal{
+	margin: 0 30px 0 0 !important;
+	width: 30% !important;
+}
+
+.around {
+	display: flex;
+	justify-content: space-around;
+}
+
+.product-container {
+	margin-top: 90px;
+	display: flex;
+	justify-content: center;
+}
+
+.product-text {
+	width: 432px;
+	display: inline-block;
+	margin-left: 20px;
+	padding-top: 40px;
+}
+
+.shop-img-large {
+	width: 31%;
+	height: 31%;
+	padding-left: 25px;
+	padding-right: 25px;
+	display: inline-block;
+}
+
+.vl {
+    border-bottom: 1px solid#e7e7e7;
+    width: 85%;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.product-description {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width: auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.product-description p{margin-left: 7.5%;}
+
+
+/* -----Kurv----- */
+
+#counter{
+	display: none;
+	position: fixed;
+	right: 25px;
+	bottom: 80px;
+	background-color: #80cbc4;
+	color: white;
+	font-family: "Futura";
+	font-weight: 900;
+	border-radius: 200px;
+	padding: 5px 15px;
+}
+
+@keyframes up{
+	0%  {transform: translate(0px, 0px);}
+	25% {transform: translate(0px, -10px);}
+	50% {transform: translate(0px, 0px);}
+	75% {transform: translate(0px, -10px);}
+	100%{transform: translate(0px, 0px);}
+}
+
+#kurv {
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	color: #6C6868;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 200px;
+	width: 70px;
+	height: 70px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	background-color: #f9f7f7;
+}
+
+@keyframes enlarge {
+	0% { transform: scale(1); } 
+	25% { transform: scale(1.05); } 
+	50% { transform: scale(1); } 
+	75% { transform: scale(1.05); } 
+	100% { transform: scale(1); } 
+}
+
+.kurv-billede{
+	width: 65%;
+	margin-top: 15px;
+	margin-left: 12px;
+}
+
+/* Modal Content/Box */
+.kurv-modal-content {
+	position: absolute;
+	top: 20%;
+	left: 63%;
+	background-color: #fefefe;
+	margin: 5% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 22%;
+}
+
+/* Kan ikke se at classen bliver brugt, men vi gemmer den for en sikkerhedsskyld
+.produkt-list{
+	display: flex;
+	flex-direction: row;
+}*/
+
+#kurv-liste{
+	padding-bottom: none !important;
+	display: flex;
+	justify-content: center;
+}
+
+.kurv-liste1, .kurv-liste2, .kurv-liste3 {
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 30px;
+}
+.kurv-liste1{ width: 50%;}
+.kurv-liste2{ width: 30%;}
+.kurv-liste3{ width: 15%;}
+
+/* -----Kurv og betaling----- */
+
+.kurv-knappe-div{
+	display: flex;
+	justify-content: space-between;
+}
+
+.kurv-knap{  
+	background-color: #f9f7f7;
+	color: #363636;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);	
+	text-align: center;	
+	margin-bottom: 20px;	
+}
+
+.kurv-knap:hover{
+	background-color: rgb(235, 235, 235);
+}
+
+/* -----Betaling----- */
+
+.betal-modal-content {
+  background-color: #fefefe;
+  margin: 2% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%; 
+}
+
+.left-text{
+	text-align: left;
+}
+
+.full-width{width: 100% !important;}
+.halv-width{width: 50% !important;}
+
+.line-height{
+	line-height: 30px;
+}
+
+
+/* -------------------------------------Kontakt---------------------------- */
+
+.halv{
+  width: 48% !important;
+}
+
+.between{
+	display: flex;
+	justify-content: space-between;
+}
+
+#subject, input[type=text],  select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+
+input[type=submit] {
+	background-color: white;
+	color: #363636;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);	
+	text-align: center;	
+}
+
+
+.kontakt-form {
+	border-radius: 5px;
+	background-color: #f9f7f7;
+	padding: 20px; 
+	width: 51%;
+	margin: 0 auto;
+}
+
+.send-button {
+	display: block;
+	text-align: center;
+}
+
+/* -------------------------Media Querry for mobil version-------------------------- */
+
+@media screen and (max-width: 480px) {
+	
+	/*	-----Overordnet----- */
+
+	/* Logo */
+
+	/* Navbar */
+
+	.navbar .container ul {width: 100%;}
+	.navbar .container ul li a{display: none;}
+	.responsive .container ul li a{display: block;}
+	.container ul li{width: 100%;}
+	.container ul li a{float: right;}
+	.burger-icon{	display: block !important;}
+	
+	/* Footer */
+
+	.mobile-around {	
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.footer-icon-mobile {width: 64%;}
+	
+	.footer-grid-row {display: block;}
+	
+	.footer-text1 {
+		margin: 0 auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.footer-text {
+		padding-left: 0;
+		padding-right: 0;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+	
+	/* ------Classes der bliver brugt på flere sider----- */
+
+	.introduction-content, .app-promotion-text {
+		width: 300px;
+		padding-left: 15px;
+	}
+	
+	.grid-row {		
+		display: block;
+		padding-bottom: 0;
+	}
+	
+	.introduction {padding-bottom: 20px;}
+	
+	.add-to-cart {margin-bottom: 20px;}
+	
+	/* Index og flytterklar */
+
+	/* Flytteklar og Husligepligter */
+
+	/* Husligepligter og shop */
+
+	/* Flytteklar, Husligepligter og Shop */
+
+	/* Post classes */
+
+	.post-paragraph, .post-content h5{padding: 0 15px 20px;}
+	
+	.post-content {		
+		margin-left: 0;
+		width: 100%;
+	}
+	
+	.widgets {display: none;}
+
+	/* -----Index----- */
+
+	/* Slideshow */
+
+	.slide-button{	display: none;}
+	
+	/* Om Os */
+
+	.portrait, .shop-img {		
+		width: 90%;
+		padding-left: 15px;
+		padding-right: 0;
+	}
+	
+	.portrait-grid {padding-bottom: 0;}
+	.portrait-text {margin-bottom: 10px;}
+	
+	/* App */
+
+	.app-promotion {padding-top: 4 0px;}
+	.app-promotion-img {width: 100%;}
+	
+	.app-promotion-content {	
+		display: block;
+		padding-top: 20px;
+	}
+
+	/* -----Flytteklar----- */
+
+	/* Indholds sekstion */
+
+	/* 10 gode råd */
+
+	.advice-content{padding-bottom: 0px;}
+	
+	.advice{width: 80%;}
+	.advice-tip{
+		width: 80%;
+		font-size: 14px;
+	}
+	.advice-text{ font-size: 12px;}
+	.advice-slides{
+		margin: 0;
+	}
+	.advice-pics{
+		width: 250px;
+		height: 180px;
+	}
+	.advice h2{font-size: 25px;}
+	.arrow{
+		text-shadow: -1px 0 rgb(235, 235, 235), 0 1px rgb(235, 235, 235), 1px 0 rgb(235, 235, 235), 0 -1px rgb(235, 235, 235);
+		color: rgb(235, 235, 235);
+	}
+	
+	/* Checkliste */
+
+	.mobile-only{display: flex !important;}
+	.pc-only{display: none !important;}
+	
+	.checkliste-icon {
+		width: 25%;
+		padding: 0px;
+	}
+	
+	
+	.checkliste-div{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+	
+	#checklisteClose{left: 85%;}
+
+	/* -----Quiz----- */
+
+	.quiz-button{
+		margin-left: 0;
+		margin-right: 40px;
+		height: 46px;
+	}
+	
+	.quiz-bund{padding: 0 20px;}
+
+	/* -----Denhurtigevask----- */
+
+	.youtube{height: auto;}
+
+	/* -----Shop----- */
+
+	.shop-img-large{		display: none;	}
+	.product-container{ 	margin-top: 0;}
+	.vl{					width: auto;}
+	.product-description {	width: auto;}
+	.around{				display: inline-block;}
+	
+	/* Shop sektion */
+
+	/* Produkt modal */
+	
+	.atc-abonnement-mobil{
+		height: 22px;
+		width: 40% !important;
+	}
+
+	/* Kurv */
+	
+	#counter{
+		font-size: 10px;
+		padding: 2px 9px;
+		right: 15px;
+		bottom: 62px;
+	}
+	
+	.kurv-modal-content, .betal-modal-content{
+		width: 85%;
+		left: 0;
+	}
+	
+	#kurv{
+		width: 40px;
+		height: 40px;
+		right: 20px;
+	}
+	
+	.kurv-billede{
+		margin-top: 8px;
+		margin-left: 7px;
+	}
+
+	/* Kurv og Betaling */
+
+	/* Betaling */
+
+
+
+	/* -----Kontakt----- */
+	
+	.kontakt-form {
+		margin: 0;
+		width: 87.5%;
+	}
+		
+	.halv{ width: 100%;	}
+	.between {display: block;}
+
+	
+}
+	
+
+
+
+
+
+
+

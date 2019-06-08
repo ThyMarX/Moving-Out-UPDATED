@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="da">
+	
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz</title>
+
+	<!-- Denne tekst vil blive vist under titlen i søgeresultaterne -->
+	<meta name="Description" content="Er du klar til at flyttet ud? Tag testen på MovingOut.">
+	
+	<!-- Bogmærker -->
+	<link rel="shortcut icon" type="image/png" href="../Logo/shortcut-logo.png">
+	<link rel="mask-icon" href="../Logo/shortcut-logo.png">
+
+	<!-- Reference til eksternt sheet -->
+	<link rel="stylesheet" href="../stylesheet.css">
+
+	<!-- Reference til Responsive Design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+	<!-- Google Typeface -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+</head>
+
+<body>
+	
+	<!-- Logo Sektion -->
+	
+	<div class="top">   <img src="../Logo/nytlogo.png" alt="logo" class="logo">   </div>
+	
+	
+	<!--Navbar Sektion -->
+	
+	<div id="navbar" class="navbar">
+		<div class="container">
+			<img src="../Icons/burger.png" alt="burger menu" class="burger-icon" id="burger-icon">
+			
+			<ul>
+				<li> <a href="../index.html">VELKOMMEN</a></li>	
+				<li> <a href="flytteklar.html" class="current-page">FLYTTEKLAR</a></li>
+				<li> <a href="husligepligter.html">HUSLIGE PLIGTER</a></li>
+				<li> <a href="shop.html">SHOP</a></li>
+				<li> <a href="kontakt.html">KONTAKT</a></li>
+			</ul>
+		</div>
+	</div>	
+	
+	<div id="fake-navbar"></div>
+	
+	<!-- Post Sektion + Widgets Sidebar -->
+	
+	<div class="post-container">
+		<div class="post-content">
+			<h4 class="post-tag">QUIZ</h4>
+
+			<h1 class="post-title">Styr På De Huslige Pligter?</h1>
+
+			<div class="post-paragraph">Er du ikke sikker på, om du lige har svaret til alt, hvad der gælder huslige pligter? Kan du kende forskel på vaskepulver eller flydende vaskemiddel og har du helt styr på, hvordan man afrimer den fryser? </div>	
+
+			<div class="post-paragraph">Tag testen, og find ud af svaret.</div>	
+
+			<div id="main"><!-- open main div -->
+				<!-- vi laver først en form at putte quizen i-->
+				<form id="form1">
+					<h3 class="quiz-h2">Spørgsmål 1: Hvad er et budget?</h3>
+					<!--vi tilføjer labels til inputs for også at gøre teksten ved siden af clickable-->
+					<!--Det første input i hvert spørgsmål er sat som checked for undgå en byg som sker hvis man klikker submit uden at alle spørgsmål er checked-->
+					<div class="answer-option">
+						<input class="quiz-input" type="radio" checked="checked" name="question1" value="10" id="q1a" />
+						<label for="q1a" >Et skema som skal hjælpe med en oversigt til økonomien. </label>
+					</div>
+					<div class="answer-option">
+						<input class="quiz-input" type="radio" name="question1" value="0" id="q1b" />
+						<label for="q1b">En note med oversigt over hvad jeg indtjener.</label>
+					</div>
+					<div class="answer-option">
+						<input class="quiz-input" type="radio" name="question1" value="0" id="q1c" />
+						<label for="q1c">Det ved jeg ikke.</label>
+					</div>
+						
+					<h3 class="quiz-h2">Spørgsmål 2: Hvad betyder at afrime en fryser?</h3>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" checked="checked" name="question2" value="10" id="q2a"/>
+					<label for="q2a">At fjerne rimen fra fryseren så den ikke bruger mere strøm end nødvendigt.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question2" value="0" id="q2b"/>
+					<label for="q2b">Tømme fryseren for mad, som er for gammelt.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question2" value="0" id="q2c"/>
+					<label for="q2c">Rengører fryseren fra rester og gamle produkter.</label>
+					</div>
+
+					
+					<h3 class="quiz-h2">Spørgsmål 3: Hvad for et vaskemiddel kan godt klumpe i tøjet? </h3>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" checked="checked" name="question3" value="0" id="q3a" />
+					<label for="q3a">Hvis man bruger vaskemiddel fra Ajax.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question3" value="10" id="q3b" />
+					<label for="q3b">Hvis man bruger pulverbaseret vaskemiddel, da det nemt kan være ukontrolleret.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question3" value="0" id="q3c" />
+					<label for="q3c">Alle former for vaskemiddel kan lave klumper.</label>
+					</div>
+
+					
+					<h3 class="quiz-h2">Spørgsmål 4: Hvor ofte skal man ud med storskrald? </h3>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" checked="checked" name="question4" value="0" id="q4a" />
+					<label for="q4a">Det skal man ugentligt.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question4" value="0" id="q4b" />
+					<label for="q4b">Det sker en gang hver 3. uge.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question4" value="10" id="q4c" />
+					<label for="q4c">Der er ikke noget tal for det, men man bliver informeret omkring det dagene op til.</label>
+					</div>
+
+					
+					<h3 class="quiz-h2">Spørgsmål 5: Må man bruge sæbe når man opvasker stegepander? </h3>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" checked="checked" name="question5" value="0" id="q5a" />
+					<label for="q5a">Ja, ellers bliver den ikke ren fra madrester eller olie.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question5" value="10" id="q5b" />
+					<label for="q5b">Man må ikke bruge sæbe på støbejernspander, da det ødelægger bunden af panden.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question5" value="0" id="q5c" />
+					<label for="q5c">Nej, man må ikke bruge sæbe til nogle pander da det ødelægger den olieret base.</label>
+					</div>
+
+					
+					<h3 class="quiz-h2">Spørgsmål 6: Hvor ofte skal du betale husleje? </h3>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" checked="checked" name="question6" value="0" id="q6a" />
+					<label for="q6a">Man betaler det ugeligt.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question6" value="10" id="q6b" />
+					<label for="q6b">Man betaler det månedligt.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question6" value="0" id="q6c" />
+					<label for="q6c">Man betaler det årligt.</label>
+					</div>
+
+					
+					<h3 class="quiz-h2">Spørgsmål 7: Hvordan afkalker man sin el-kedel? </h3>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" checked="checked" name="question7" value="10" id="q7a" />
+					<label for="q7a">Man bruger eddike til at fjerne alle kalkrester.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question7" value="0" id="q7b" />
+					<label for="q7b">Man bruger sæbe og vand til at få el-kedlen ren for hvide pletter.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question7" value="0" id="q7c" />
+					<label for="q7c">Man behøver ikke at afkalke sin el-kedel.</label>
+					</div>
+
+					
+					<h3 class="quiz-h2">Spørgsmål 8: Hvad skal du gøre med dine batterier når de ikke virker længere?</h3>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" checked="checked" name="question8" value="0" id="q8a" />
+					<label for="q8a">Man skal smide dem ud i skraldespanden.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question8" value="10" id="q8b" />
+					<label for="q8b">Man skal samle dem sammen i en pose med mindre de er genopladelige.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question8" value="0" id="q8c" />
+					<label for="q8c">Man skal give dem til viceværten.</label>
+					</div>
+
+					
+					<h3 class="quiz-h2">Spørgsmål 9: Fra hvornår er ting holdbart?  </h3>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" checked="checked" name="question9" value="10" id="q9a" />
+					<label for="q9a">Når man har åbnet produktet.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question9" value="0" id="q9b" />
+					<label for="q9b">Fra den dag det er produceret.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question9" value="0" id="q9c" />
+					<label for="q9c">Fra når man har købt produktet og det kommer med hjem.</label>
+					</div>	
+
+					
+					<h3 class="quiz-h2">Spørgsmål 10: Hvorfor er det vigtigt at lære om huslige pligter?  </h3>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" checked="checked" name="question10" value="10" id="q10a" />
+					<label for="q10a">Fordi det giver en oversigt om, hvad man egentlig skal tænke på når man er udeboende.</label>
+					</div>
+					
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question10" value="10" id="q10b" />
+					<label for="q10b">Fordi man skal til at klare at leve uden sine forældre eller værge.</label>
+					</div>
+						
+					<div class="answer-option">
+					<input class="quiz-input" type="radio" name="question10" value="10" id="q10c" />
+					<label for="q10c">Fordi der er meget ny viden som man mangler, hvis man ikke har været selvstændig før.</label>
+					</div>
+					
+					<br>
+					<div class="quiz-bund">
+						<button class="post-button quiz-button" type="submit" value="Submit">Svar</button>
+
+						<div>
+							<p>Ud af <b>100</b> er din score: <span id="grade">__</span></p>
+							<p id="grade2">__</p>
+						</div>
+					</div>
+				</form>	
+
+			<div class="vl-post"></div>			
+
+			</div>
+
+		</div>	
+
+		<!-- Widgets Aside Sektion-->
+
+		<div class="widgets">
+			<h4 class="widget-title">Følg vores Instagram</h4>	
+			<a href="https://www.instagram.com/movingout.dk/" target="_blank"><img src="../Images/instagrampromotion.jpg" alt="instagram-promotion" class="instagram-promotion"></a>	
+			<div class="vl-widget"></div>		
+
+			<h4 class="widget-title">SIMILIAR POST</h4>	
+			<a href="denhurtigevask.html" target="_blank">   <img src="../Images/washingmachine.png" alt="img" class="widget-img">   </a>
+			<h4 class="post-tag">Tutorial</h4>	
+			<h3>Den Hurtige Vask</h3>	
+			<p style="text-align: center;">Se videon Den Hurtige Vask og lær at vaske tøj med Thomas.</p>	
+			<a href="denhurtigevask.html" target="_blank">   <div class="add-to-cart">LÆS MERE</div>   </a>	
+			<div class="vl-widget"></div>		
+		</div>
+	</div> 
+	
+	<!--  -->
+	<div class="clear"><br></div>
+	
+	<footer>
+		<div class="footer-content">
+			<div class="footer-grid-row">	
+				<div class="footer-text1" style="vertical-align:middle">Copyright 2019 © Moving Out</div>	
+					<div class="footer-text mobile-around">	
+						<a href="https://www.facebook.com/movingoutdenmark/" target="_blank"><img src="../Icons/facebook.png" alt="facebook" class="footer-icon footer-icon-mobile"></a>	
+
+						<a href="https://www.instagram.com/movingout.dk/" target="_blank"><img src="../Icons/instagram.png" alt="instagram" class="footer-icon footer-icon-mobile"></a>	
+
+						<a href="https://twitter.com/MovingoutD?lang=en" target="_blank"><img src="../Icons/twitter.png" alt="twitter" class="footer-icon footer-icon-mobile"></a>	
+
+						<a href="https://www.youtube.com/channel/UCpfPwvBDKsri5PzvbiQa6fA?view_as=subscriber" target="_blank"><img src="../Icons/youtube.png" alt="youtube" class="footer-icon footer-icon-mobile"></a>		
+					</div>
+
+				<div class="footer-text">
+					<a href="kontakt.html">
+						<img src="../Icons/mail.png" alt="email" class="footer-icon"> 
+					</a>
+					movingoutdk@gmail.com
+				</div>
+			</div>
+		</div>
+	</footer>	
+	
+	<script src="../navbar.js"></script>
+	<script src="quiz.js"></script>
+	
+</body>
+	
+</html>
