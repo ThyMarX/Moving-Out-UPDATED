@@ -246,7 +246,7 @@ function visKurv(){
 	}
 	if(products[1] > 0){
 		document.getElementById("vare").innerHTML += "Pakke 2 <br class='line-height'>"; 
-		document.getElementById("pris").innerHTML += "292dkk <br class='line-height'>"; 
+		document.getElementById("pris").innerHTML += "292 dkk <br class='line-height'>"; 
 		document.getElementById("stk").innerHTML += products[1] + "<br class='line-height'>";
 		totalPris += 292 * products[1]; 
 	}
